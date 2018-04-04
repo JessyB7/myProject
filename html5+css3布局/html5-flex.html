@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML5 语义化标签 + CSS3 flex布局</title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <style type="text/css">
+  html,body{
+  	width: 100%;
+  	height: 100%;
+  }
+  body{
+  	display: flex;
+  	display: -webkit-flex;
+  	flex-flow: row wrap;
+  	justify-content: center;/*水平居中*/
+  	align-items: flex-end;/*垂直居上8*/
+  }
+  .nav{
+  	background-color: red;
+  	flex-basis: 100%;
+  	height: 60px;
+  	align-self: flex-start;
+  	display: flex;
+  	flex-flow: row wrap;
+  	align-items: stretch;
+  }
+  .nav-left{
+  	background-color: #ccc;
+  	flex-grow: 1;
+  }
+  .nav-right{
+  	background-color: #000;
+  	flex-grow: 0;
+  }
+  ul,ul li{display: flex;align-items: stretch;}
+  ul li a{display: flex;align-items: center;width: 75px;justify-content: center;}
+  .aside{
+  	background-color: blue;
+  	flex-grow: 0;
+  	height: calc(100% - 60px);
+  	align-self: flex-end;
+  }
+  .section{
+  	background-color: green;
+  	height: calc(100% - 60px);
+  	flex-grow: 1;
+  }
+</style>
+</head>
+<body>
+	<nav class="nav">
+		<ul class="nav-left">
+			<li><a href="javascript:;">中大凯旋</a></li>
+			<li><a href="javascript:;">仪表板</a></li>
+			<li><a href="javascript:;">项目</a></li>
+			<li><a href="javascript:;">问题</a></li>
+			<li><a href="javascript:;">面板</a></li>
+			<li><a href="javascript:;">Tests</a></li>
+			<li><a href="javascript:;">新建</a></li>
+		</ul>
+		<ul class="nav-right">
+			<li><a href="javascript:;">搜索框</a></li>
+			<li><a href="javascript:;">设置</a></li>
+			<li><a href="javascript:;">用户信息</a></li>
+		</ul>
+	</nav>
+	<aside class="aside">ads双方是否收到fsad</aside>
+	<section class="section">
+		发送到发送到
+	</section>
+
+</div>  
+</body>
+</html>
